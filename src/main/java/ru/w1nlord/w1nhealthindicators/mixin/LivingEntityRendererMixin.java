@@ -53,7 +53,7 @@ public abstract class LivingEntityRendererMixin<T extends LivingEntity, S extend
         boolean renderHearts = Config.shouldRenderHearts();
         boolean renderArmor = Config.shouldRenderArmor();
 
-        if (entity == null || (!renderHearts && !renderArmor) || entity == mc.player || entity instanceof ArmorStandEntity || entity instanceof PlayerEntity player && ServerUtil.isNPC(player)) return;
+        if (entity == null || entity.isInvisible() || (!renderHearts && !renderArmor) || entity == mc.player || entity instanceof ArmorStandEntity || entity instanceof PlayerEntity player && ServerUtil.isNPC(player)) return;
 
         int armor = renderArmor ? entity.getArmor() : 0;
         int health = renderHearts ? MathHelper.ceil(ServerUtil.resolveHealth(entity, Config.getHealthSource())) : 0;
