@@ -9,8 +9,8 @@
 	],
 	"contact": {
 		"homepage": "https://t.me/w1nlord",
-		"sources": "https://github.com/USERNAME/REPOSITORY",
-		"issues": "https://github.com/USERNAME/REPOSITORY/issues"
+		"sources": "https://github.com/w1nl0rd/W1nHealthIndicators/tree/1.21.11",
+		"issues": "https://github.com/w1nl0rd/W1nHealthIndicators/issues"
 	},
 	"license": "MIT",
 	"entrypoints": {
