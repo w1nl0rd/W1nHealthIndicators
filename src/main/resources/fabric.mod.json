@@ -1,0 +1,28 @@
+{
+	"schemaVersion": 1,
+	"id": "${id}",
+	"version": "${version}",
+	"name": "${name}",
+	"description": "Отображение хп с обходом серверов",
+	"authors": [
+		"w1nlord"
+	],
+	"contact": {
+		"homepage": "https://t.me/w1nlord",
+		"sources": "https://github.com/USERNAME/REPOSITORY",
+		"issues": "https://github.com/USERNAME/REPOSITORY/issues"
+	},
+	"license": "MIT",
+	"entrypoints": {
+		"main": [
+			"${maven_group}.W1nHealthIndicators"
+		],
+		"modmenu": [
+			"${maven_group}.screen.ConfigScreen"
+		]
+	},
+	"accessWidener": "${id}.accesswidener",
+	"mixins": [
+		"${id}.mixins.json"
+	]
+}
